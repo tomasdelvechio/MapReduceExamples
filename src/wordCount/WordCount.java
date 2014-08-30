@@ -1,4 +1,4 @@
-package maxtemperature;
+package wordCount;
 
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
@@ -38,5 +38,5 @@ public class WordCount {
         
         System.exit( job.waitForCompletion(true) ? 0 : 1 );
     }
-    
+
 }
