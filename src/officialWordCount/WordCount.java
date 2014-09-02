@@ -1,8 +1,7 @@
-package officialWordCount;
-
 /*
     Application extracted from http://wiki.apache.org/hadoop/WordCount
 */
+package officialWordCount;
 
 import java.io.IOException;
 import java.util.*;
@@ -50,6 +49,8 @@ public class WordCount {
         Configuration conf = new Configuration();
         
         Job job = new Job(conf, "wordcount");
+        
+        job.setJarByClass(WordCount.class);
         
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
