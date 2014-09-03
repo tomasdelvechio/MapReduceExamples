@@ -7,3 +7,4 @@ Examples in this repository:
 
  * Tom White's book example of Max Temperature.
  * Word count
+ * Official Word Count from Hadoop Wiki Examples
